@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Página de Rugby{% endblock %}</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula tu archivo CSS aquí -->
+</head>
+<body>
+    <header>
+        <h1>Club de Rugby</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/view_data">Ver Datos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Club de Rugby</p>
+    </footer>
+</body>
+</html>
+
+
+

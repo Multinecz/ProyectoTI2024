@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<h2>Últimos Artículos</h2>
+<ul>
+    {% for item in data %}
+    <li>{{ item.title }} - <a href="/detail/{{ item.id }}">Detalles</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+
