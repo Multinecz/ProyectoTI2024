@@ -1,6 +1,6 @@
 import webbrowser
-import joblib
-from flask import Flask, render_template, request
+import joblib # type: ignore
+from flask import Flask, render_template, request # type: ignore
 
 
 app = Flask(__name__)
